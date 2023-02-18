@@ -14,7 +14,7 @@ const Products = () => {
    return (
       <div className="grid grid-cols-4 gap-2">
          {products.map((product) => (
-            <div className="rounded-[15px] shadow-lg">
+            <div className="rounded-[15px] shadow-lg p-2">
                <img src={product.picture} alt="" className="w-[121px] h-[121px] mx-auto mb-5" />
                <h1 className="text-2xl font-semibold">{product.name}</h1>
                <p className="text-[22px] font-semibold text-gray-500">Price: ${product.price}</p>
