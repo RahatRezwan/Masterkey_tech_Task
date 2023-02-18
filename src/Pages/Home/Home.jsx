@@ -8,6 +8,9 @@ import YellowStars from "../../assets/icons/YellowStars.png";
 import HeadPhone from "../../assets/HeadPhone.png";
 import colors from "../../assets/colors.png";
 import smallbanner from "../../assets/smallbanner.png";
+import Products from "../../Components/Products/Products";
+import HomeSideBar from "../../Components/HomeSideBar/HomeSideBar";
+import Categories from "../../Components/Categories/Categories";
 const Home = () => {
    return (
       <div className="mx-[37px]">
@@ -60,8 +63,15 @@ const Home = () => {
             </div>
             <img src={smallbanner} alt="" className="w-[358px] h-[212px]" />
          </div>
+
          {/* Home Page Body */}
-         <body className="flex"></body>
+         <div className="flex mt-[20px]">
+            <div className="w-[80%]">
+               <Products />
+               <Categories />
+            </div>
+            <HomeSideBar />
+         </div>
       </div>
    );
 };
