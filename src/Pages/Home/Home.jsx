@@ -65,12 +65,14 @@ const Home = () => {
          </div>
 
          {/* Home Page Body */}
-         <div className="flex mt-[20px]">
-            <div className="w-[80%]">
+         <div className="flex gap-2 mt-[20px]">
+            <div className="w-[70%]">
                <Products />
                <Categories />
             </div>
-            <HomeSideBar />
+            <div className="w-[30%]">
+               <HomeSideBar />
+            </div>
          </div>
       </div>
    );

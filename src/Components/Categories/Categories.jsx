@@ -8,13 +8,13 @@ const Categories = () => {
       { name: "New Sellers", details: "$460+ Orders & reviews", img: cat2 },
    ];
    return (
-      <div className="mt-20">
+      <div className="mt-20 w-full">
          <h1 className="text-2xl font-bold text-[#66FF1E]">
             Explore The Popular Categories{"  "}
             <span className="text-lg font-normal text-black">See all</span>
          </h1>
 
-         <div className="flex gap-5">
+         <div className="flex gap-5 w-full">
             {categories.map((category, i) => (
                <div className="flex justify-between items-center p-4 rounded-md shadow-lg">
                   <img src={category.img} alt="" />
