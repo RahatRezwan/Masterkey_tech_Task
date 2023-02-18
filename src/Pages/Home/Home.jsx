@@ -11,14 +11,17 @@ import smallbanner from "../../assets/smallbanner.png";
 import Products from "../../Components/Products/Products";
 import HomeSideBar from "../../Components/HomeSideBar/HomeSideBar";
 import Categories from "../../Components/Categories/Categories";
+import counter from "../../assets/counter.png";
+import likeButton from "../../assets/likeButton.png";
+
 const Home = () => {
    return (
-      <div className="mx-[37px]">
+      <div className="mx-[37px] mt-[22px]">
          {/* Home Page Header */}
          <header className="flex justify-between items-center">
             <div className="text-center">
-               <h1>Headphone</h1>
-               <p>For the top brand</p>
+               <h1 className="text-4xl">Headphone</h1>
+               <p className="text-lg">For the top brand</p>
             </div>
             <div className="flex gap-7">
                <div className="flex shadow-lg gap-2 items-center rounded-[10px] p-3">
@@ -40,11 +43,11 @@ const Home = () => {
 
          {/* Home page banner */}
          <div className="flex gap-10 mt-6">
-            <div className="flex justify-center items-center shadow-xl rounded-[10px]">
+            <div className="flex justify-center items-center shadow-xl rounded-[10px] p-6">
                <img src={HeadPhone} alt="" />
                <div>
                   <div className="mb-3">
-                     <h1 className="text-xl font-semibold">Beats Studio3 Wireless Headphone</h1>
+                     <h1 className="text-[22px] font-semibold">Beats Studio3 Wireless Headphone</h1>
                      <div className="flex gap-3">
                         <img src={YellowStars} alt="" />
                         <p>(200+ Reviews)</p>
@@ -56,9 +59,23 @@ const Home = () => {
                      crip & Closs{" "}
                   </p>
                   <p className="text-[#07FFD2]">Price $450.55</p>
-                  <p className="flex gap-2 items-center font-semibold text-lg">
-                     Color: <img src={colors} alt="" />
-                  </p>
+                  <div className="flex justify-between">
+                     <p className="flex gap-2 items-center font-semibold text-lg">
+                        Color: <img src={colors} alt="" />
+                     </p>
+                     <div>
+                        <img src={counter} alt="" />
+                     </div>
+                  </div>
+                  <div className="flex gap-2 w-full mt-5">
+                     <img src={likeButton} alt="" />
+                     <button className="border-2 border-[#38FF4C] rounded-md py-2 px-4">
+                        Add To Cart
+                     </button>
+                     <button className="bg-[#38FF4C] border border-[#38FF4C] rounded-md py-2 px-4">
+                        Buy Now
+                     </button>
+                  </div>
                </div>
             </div>
             <img src={smallbanner} alt="" className="w-[358px] h-[212px]" />
