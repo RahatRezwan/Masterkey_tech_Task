@@ -25,8 +25,10 @@ const HomeSideBar = () => {
                         alt=""
                         className="w-[48px] h-[48px] mx-auto mb-5 bg-slate-200 rounded-full"
                      />
-                     <h1 className="text-lg font-semibold">{product.name}</h1>
-                     <p className="text-sm">256 Review And 1150 Order</p>
+                     <div>
+                        <h1 className="text-lg font-semibold">{product.name}</h1>
+                        <p className="text-sm">256 Review And 1150 Order</p>
+                     </div>
                   </div>
                   <p className="text-sm font-semibold text-gray-500">Price: ${product.price}</p>
                </div>
